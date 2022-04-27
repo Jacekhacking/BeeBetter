@@ -1,0 +1,10 @@
+.bookingLink{
+    border: 2px solid transparent;
+    margin-top: 5em;
+    padding: .5em;
+
+}
+.bookingLink:hover{
+    border: 2px solid hsl(var(--clr-dark),.4);
+    background-color: hsl(var(--clr-yellow),.7);
+}

@@ -1,0 +1,27 @@
+
+.fi {
+    width: 100%;
+    height: 20rem;
+    z-index: 0;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+.fi img{
+    width: 115%;
+    height: 100%;
+    object-fit: cover;
+    /*transform:rotateZ(-2deg) translateY(-8rem) translateX(-4rem);*/
+    opacity: 85%;
+    min-height: 400px;
+
+}
+/*.instagram-link{*/
+/*    display:inline-block;*/
+/*}*/
+.footer{
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 10em;
+    border-top: .1rem solid hsl(var(--clr-yellow))
+}

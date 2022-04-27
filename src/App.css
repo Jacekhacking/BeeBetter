@@ -1,0 +1,278 @@
+/*----------------*/
+/*Custom Properties*/
+/*----------------*/
+
+
+:root {
+
+    /*Colors*/
+    --clr-yellow:51,91%, 75%;
+    --clr-brown: 17, 25%, 61%;
+    --clr-blue: 203, 32%, 64%;
+    --clr-dark: 100, 3%, 21%;
+    --clr-light: 45, 40%, 97%;
+
+    /*font-sizes*/
+    --fs-900: 9.375rem;
+    --fs-800: 5.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /*spacing*/
+    --spacing-one: calc(1rem * 0.5);
+    --spacing-two: calc(1rem);
+    --spacing-five: calc(2.5rem);
+
+
+    --ff-serif-condensed: 'Abhaya Libre', serif;
+    --ff-serif-bold: 'IM Fell English SC', serif;
+}
+
+
+/*Box sizing*/
+
+
+* ,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+
+}
+
+
+/*Reset margins*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+body::backdrop{
+    background-color: white;
+}
+/* reset weight/boldness */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up body */
+body {
+    line-height: 2;
+    min-height: 100vh;
+    font-size: var(--fs-400);
+    letter-spacing: 0.1em;
+    background-color: hsl(var(--clr-light));
+    font-family: var(--ff-serif-condensed)
+
+}
+
+
+/*make images easier to work with*/
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/*make form elements easier to work with*/
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+a:link  {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+
+a {
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+    padding: 2px 4px;
+    margin-left: -2px;
+    margin-right: -2px;
+    text-decoration: none;
+}
+a:visited {color:black !important;}
+
+a:active {color: black !important;}
+
+a:hover {color: var(--teal-color) !important;}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*---------------------*/
+/*   Utility Classes   */
+/*---------------------*/
+
+
+
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+
+/* targets any element that has a previous sibling */
+.flow > *:where(:not(:first-child)){
+    margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+
+/* Screen reader only!!! */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap; /*added line*/
+    border: 0;
+}
+
+/* colors */
+
+.bg-dark{background-color: hsl(var(--clr-dark))}
+.bg-light{background-color: hsl(var(--clr-light))}
+.bg-blue{background-color: hsl(var(--clr-blue))}
+.bg-brown{background-color: hsl(var(--clr-brown))}
+.bg-yellow{background-color: hsl(var(--clr-yellow))}
+
+.text-dark{color: hsl(var(--clr-dark))}
+.text-light{color: hsl(var(--clr-light))}
+.text-blue{color: hsl(var(--clr-blue))}
+.text-brown{color: hsl(var(--clr-brown))}
+.text-yellow{color: hsl(var(--clr-yellow))}
+
+/* typography*/
+
+.ff-serif-bold { font-family: var(--ff-serif-bold); }
+.ff-serif-condensed { font-family: var(--ff-serif-condensed); }
+
+
+
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2.35px; }
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+.typography-section {
+    margin: 4rem 0
+}
+
+
+
+/* hero and main header components*/
+
+.hero{
+    background-image: url("./components/UI/assets/flowersOnBack.jpg");
+    background-repeat: no-repeat;
+    min-height: 35vh;
+    background-size: contain;
+    background-position: center;
+    width: 100%
+}
+
+
+
+.mainHeader{
+    text-align: center;
+}
+
+
+
+
+
+
+/*---------------------*/
+/*  Media Queries      */
+/*---------------------*/
+
+
+
+
+/* hero media */
+@media (min-width: 640px) {
+    .hero{
+        background-size: cover;
+    }
+
+}
+
+
+
+
+/*    -----------------     */

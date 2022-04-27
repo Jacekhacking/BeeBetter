@@ -1,0 +1,30 @@
+.logo {
+	margin: 1rem;
+	justify-content: center;
+}
+.primaryHeader {
+	margin-top: 1em;
+	align-items: center;
+	justify-content: space-between;
+	background-color: hsl(var(--clr-brown), .2);
+	border-top: .2em solid hsl(var(--clr-dark),.2);
+	border-bottom: .2em solid hsl(var(--clr-dark),.2);
+
+}
+.primaryNavigation {
+	margin: 0;
+	padding: 2em;
+	height: 100%
+}
+
+.navItem{
+	margin: 1px 0;
+	line-height: 1.5em;
+	display: block;
+	width: auto;
+	border-bottom: .2em solid transparent;
+
+}
+.navItem:hover {
+	border-bottom: .2em solid hsl(var(--clr-blue));
+}
