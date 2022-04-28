@@ -28,3 +28,6 @@
 .navItem:hover {
 	border-bottom: .2em solid hsl(var(--clr-blue));
 }
+.logo{
+	max-height: 150px;
+}

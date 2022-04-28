@@ -7,12 +7,12 @@ function AdminLogin() {
         <Fragment>
             <div className={`${styles['admin-login-body']} `}>
                 <div>
-                    <label htmlFor="username">Username</label>
+                    <label htmlFor="username">Username:</label>
                     <input type="text" placeholder="Username" name="username" required/>
 
                 </div>
                 <div>
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password">Password: </label>
                     <input type="text" placeholder="Password" name="password"/>
                 </div>
                 <button>Login</button>

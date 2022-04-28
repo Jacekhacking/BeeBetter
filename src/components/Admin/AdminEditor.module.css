@@ -1,0 +1,16 @@
+.blog-area{
+    max-width: 300rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.blog-area-container{
+    padding: 3em;
+}
+
+.blog-header{
+    text-align: center;
+    background-color: hsl(var(--clr-yellow), .5);
+    border: 2px solid hsl(var(--clr-brown));
+}

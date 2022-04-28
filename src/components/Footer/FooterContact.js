@@ -7,7 +7,7 @@ function FooterContact () {
         <Fragment>
             <footer className={`${styles.footer} `} style={{justifyContent:'center'}}>
                 <h2 style = {{justifyContent: 'center'}}>Contact Info</h2>
-                <ul className={`flex wrap`}>
+                <ul className={``}>
                     <li>
                         Email: <a href="mailto:alora@beebettermassage.com">alora@beebettermassage.com</a>
                     </li>

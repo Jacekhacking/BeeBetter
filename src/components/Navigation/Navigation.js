@@ -3,6 +3,7 @@ import React, {Fragment} from 'react';
 //import {Link} from "react-router-dom";
 import './Navigation.module.css'
 import styles from "./Navigation.module.css"
+import Logo from "../UI/assets/Logo.png"
 
 
 const Navigation = (props) => {
@@ -13,7 +14,7 @@ const Navigation = (props) => {
     return (
         <Fragment>
             <nav className={`${styles.primaryHeader} flex ff-serif-bold`}>
-                <h1 className={styles.logo}><strong>Bee Better Massage</strong></h1>
+                <img className={styles['logo']} src={Logo} alt="logo"/>
                 <ul className={`${styles.primaryNavigation} + flex`}>
                     {tabs.map(tab => (
                         <a

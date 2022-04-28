@@ -22,7 +22,8 @@ function App() {
                 return <Services />
 
             default:
-                return <Honeycomb currentPage={currentPage} handlePageChange={handlePageChange}/>
+                return <Services />
+                // return <Honeycomb currentPage={currentPage} handlePageChange={handlePageChange}/>
         }
     }
 
