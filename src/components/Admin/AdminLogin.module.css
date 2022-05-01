@@ -1,5 +1,10 @@
 .admin-login-body{
     min-height: 50vh;
     background-color: hsl(var(--clr-brown));
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-login-container{
+
 }

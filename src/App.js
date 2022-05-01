@@ -1,60 +1,58 @@
 import React, {Fragment, useState} from 'react';
 import './App.css';
 import About from './components/About/About';
-import Bookings from "./components/Bookings/Bookings";
 import FooterContact from "./components/Footer/FooterContact";
 import Honeycomb from "./components/Honeycomb/Honeycomb";
 import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
-import AdminLogin from "./components/Admin/AdminLogin";
-import AdminEditor from "./components/Admin/AdminEditor";
+import Unfinished from "./components/UI/Unfinished/Unfinished";
+
 function App() {
 
     const [currentPage, handlePageChange] = useState('Home');
 
 
     const renderPage = () => {
+
+
         switch (currentPage) {
+
+
             case 'About Me' :
-                return <About />;
+                return  <About />;
 
             case 'Services' :
                 return <Services />
 
+            case 'Unfinished' :
+                return <Unfinished/>
+
             default:
-                return <Services />
-                // return <Honeycomb currentPage={currentPage} handlePageChange={handlePageChange}/>
+                return ''
         }
     }
-
 
     if (currentPage === 'About Me' ){
         console.log('about me if statement working')
     }
 
-
         return (
 
         <Fragment>
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
-
+            <Navigation />
             <body>
             <h1 className={`mainHeader text-dark ff-serif-bold fs-800`}>Bee Better Massage </h1>
             <div className='hero'>
             </div>
-            <Bookings/>
+            <Honeycomb currentPage={currentPage} handlePageChange={handlePageChange}/>
 
             {renderPage(currentPage)}
-            <AdminLogin></AdminLogin>
-            <AdminEditor/>
 
             <FooterContact/>
 
             </body>
         </Fragment>
-
-
     )
 }
-
 export default App;
+

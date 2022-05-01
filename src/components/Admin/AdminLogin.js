@@ -5,8 +5,9 @@ import styles from './AdminLogin.module.css'
 function AdminLogin() {
     return (
         <Fragment>
-            <div className={`${styles['admin-login-body']} `}>
-                <div>
+            <div className ={`${styles['admin-login-body']} `}>
+                <div className={`${styles['admin-login-container']}`}>
+                <div >
                     <label htmlFor="username">Username:</label>
                     <input type="text" placeholder="Username" name="username" required/>
 
@@ -15,8 +16,10 @@ function AdminLogin() {
                     <label htmlFor="password">Password: </label>
                     <input type="text" placeholder="Password" name="password"/>
                 </div>
-                <button>Login</button>
+                    <button>Login</button>
+                </div>
             </div>
+
         </Fragment>
 
     )

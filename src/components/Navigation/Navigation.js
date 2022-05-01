@@ -9,23 +9,17 @@ import Logo from "../UI/assets/Logo.png"
 const Navigation = (props) => {
 
 
-    const tabs = ['About Me', 'Services', 'Contact']
 
     return (
         <Fragment>
             <nav className={`${styles.primaryHeader} flex ff-serif-bold`}>
-                <img className={styles['logo']} src={Logo} alt="logo"/>
-                <ul className={`${styles.primaryNavigation} + flex`}>
-                    {tabs.map(tab => (
-                        <a
-                            href={'#' + tab.toLowerCase()}
-                           onClick={() => props.handlePageChange(tab)}
-                           className={styles.navItem}>
-                            {tab}
-                        </a>
-                    ))}
-                    {/*<a href="#" className={styles.navItem}>Testing</a>*/}
-                </ul>
+                    <img  className={styles['logo']} src={Logo} alt="logo"/>
+
+
+                <div className={`flex`} style={{justifyContent:'center'}}>
+                    <a href="https://www.vagaro.com/beebettermassage"><h2 className={`${styles.bookingLink} fs-500`} style={{textAlign: 'center'}}>Book A Session</h2></a>
+                </div>
+
             </nav>
         </Fragment>
     )

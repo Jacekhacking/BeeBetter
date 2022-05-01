@@ -6,23 +6,23 @@ function FooterContact () {
     return (
         <Fragment>
             <footer className={`${styles.footer} `} style={{justifyContent:'center'}}>
-                <h2 style = {{justifyContent: 'center'}}>Contact Info</h2>
-                <ul className={``}>
-                    <li>
-                        Email: <a href="mailto:alora@beebettermassage.com">alora@beebettermassage.com</a>
-                    </li>
-                    <li>
+
+                    <div>
+                        <p className={`fs-300`}>
+                            Email: <a href="mailto:alora@beebettermassage.com">alora@beebettermassage.com</a>
+                        </p>
+
+                    </div>
+
+                    <div className={`fs-300`}>
                         Phone: 385-313-0591
-                    </li>
-                    <li>
+                    </div>
+                    <div className={`fs-300`}>
                         <a href="https://www.instagram.com/bee.better.massage">Instagram </a>
-                    </li>
-                </ul>
+                    </div>
+
 
             </footer>
-
-
-
         </Fragment>
     )
 }

@@ -21,11 +21,11 @@ const Services = () => {
                 <ul style={{textAlign: 'center', margin: '0'}}>
 
 
-                    <li>Sport 60 min -
+                    <li>60 minute -
                     </li>
-                    <li>Sport 90 -
+                    <li>90 minute -
                     </li>
-                    <li>Sport 120 -
+                    <li>120 minute -
                     </li>
                 </ul>
                 <h3 className={`${styles["services-subheader"]} fs-600 ff-serif-bold`}
@@ -37,26 +37,43 @@ const Services = () => {
                     circulation & decreasing pain. Typically, a full body massage while highlighting some areas of
                     tension, for example; neck & shoulder focus, low back, etc. With 60 minutes we have time for the
                     basics.</section>
-                <ul>
+                <ul style={{textAlign: 'center', margin: '0'}}>
                     <li>
-                        Spa 60 -
+                         60 minute -
                     </li>
                     <li>
-                        Spa 90 -
+                        90 minute -
                     </li>
                     <li>
-                        Spa 120 -
+                         120 minute -
                     </li>
+                </ul>
+
+                <h3 className={`${styles["services-subheader"]} fs-600 ff-serif-bold`}
+                    style={{textAlign: 'center'}}>Focused Stretching Session</h3>
+
+                <section className={`${styles["services-description"]} fs-400`} style={{textAlign: 'center'}}>
+                    You can book a one-one-assisted stretching session. This will utilize PNF style of stretching to improve flexibility & encourage relaxation.   I also offer stretching in certain massage sessions, so you can have access to both in one session. With 90 min we have time to address the entire body & focus on specific issues along the way
+                </section>
+                <ul style={{textAlign: 'center', margin: '0'}}>
+                    <li> 60 minute - </li>
+                    <li> 90 minute - </li>
                 </ul>
 
                 <h3 className={`${styles["services-subheader"]} fs-600 ff-serif-bold`}
                     style={{textAlign: 'center'}}>Personal Training</h3>
                 <section className={`${styles["services-description"]} fs-400`} style={{textAlign: 'center'}}>
-                    Personal Training - With my Certification in Strength and Conditioning Spec(CSCS) recognized by
-                    National Strength and Conditioning Association (NSCA), so I can offer personal training to
+                     Certification in Strength and Conditioning <span className={`fs-300`}>(CSCS)</span> recognized by
+                    National Strength and Conditioning Association <span className={`fs-300`}>(NSCA)</span>, so I can offer personal training to
                     clients. I am currently involved in another certification called Functional Range Conditioning
-                    (FRC). My space does not contain exercise equipment, so keep that in mind. We will be doing more
+                    <span className={`fs-300`}>(FRC)</span>. My space does not contain exercise equipment, so keep that in mind. We will be doing more
                     corrective exercise rather than strictly weight lifting.
+                </section>
+                <h3 className={`${styles["services-subheader"]} fs-600 ff-serif-bold`}
+                    style={{textAlign: 'center'}}>Nutrition Counciling</h3>
+                <section className={`${styles["services-description"]} fs-400`} style={{textAlign: 'center'}}>
+                    This is a consultation style meeting where we can address any questions you have involving your nutrition. We can discuss your goals, calculate macros, and improve your mindset with eating.  I have experience with nutrition from college classes & my own body recomposition journey. I am not a dietician, I am a nutritionist, and you should know the difference before spending money on this service.
+
                 </section>
 
             </div>

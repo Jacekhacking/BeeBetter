@@ -18,12 +18,10 @@
     margin: 0 auto;
     padding: 0;
     transform: translateY(80px);
-
 }
 
 .honeycomb-cell
 {
-
     -webkit-box-flex: 0;
     flex: 0 1 250px;
     max-width: 250px;
@@ -110,6 +108,7 @@
 {
     background: hsl(var(--clr-yellow));
 }
+
 /*.honeycomb-cell:hover::after*/
 /*{*/
 /*  opacity: 0;*/

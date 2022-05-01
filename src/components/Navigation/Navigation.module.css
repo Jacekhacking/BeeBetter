@@ -9,7 +9,7 @@
 	background-color: hsl(var(--clr-brown), .2);
 	border-top: .2em solid hsl(var(--clr-dark),.2);
 	border-bottom: .2em solid hsl(var(--clr-dark),.2);
-
+	max-height: 100px;
 }
 .primaryNavigation {
 	margin: 0;
@@ -29,5 +29,24 @@
 	border-bottom: .2em solid hsl(var(--clr-blue));
 }
 .logo{
-	max-height: 150px;
+	max-height:90px;
 }
+
+
+.bookingLink{
+	border: 2px solid hsl(var(--clr-dark),.4);
+	margin: 2em;
+	border-bottom: 2px solid hsl(var(--clr-dark), .4);
+	background-color: hsl(var(--clr-brown),.3);
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: clamp(var(--fs-400), 5vw, var(--fs-500));
+
+
+
+}
+.bookingLink:hover{
+	border: 2px solid hsl(var(--clr-dark),.4);
+	background-color: hsl(var(--clr-yellow),.7);
+}
+
