@@ -33,6 +33,8 @@
     z-index: 1;
     box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.1);
 }
+
+
 .honeycomb-cell-img
 {
     object-fit: cover;
@@ -97,7 +99,8 @@
 .honeycomb-cell:hover,
 .honeycomb-cellTitle
 {
-    color: hsl(var(--clr-light))
+    color: hsl(var(--clr-light));
+    cursor: pointer;
 }
 .honeycomb-cell:hover,
 .honeycomb-cell-img
@@ -122,6 +125,9 @@
     margin: 0 12.5px;
 }
 
+.hex-link > a:link{
+   color: pink;
+}
 /****** Responsive *******/
 
 @media (max-width: 550px)

@@ -13,21 +13,24 @@
 }
 .aboutImage{
     border: .2em solid hsl(var(--clr-brown));
-    /*margin: .5em;*/
-    max-width: 75vw;
+    max-width: 65vw;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*float: left;*/
-    /*box-shadow: -10px -5px 19px black;*/
+
 }
 
 @media (max-width: 1000px){
     .aboutImage{
-
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (min-width: 1000px ){
+    .aboutImage{
+        max-width: 35vw;
+        max-height: 40vh;
+        float: left;
+        margin: .5em;
     }
 }

@@ -6,17 +6,16 @@ import Honeycomb from "./components/Honeycomb/Honeycomb";
 import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
-
 function App() {
 
-    const [currentPage, handlePageChange] = useState('Home');
+    const [currentPage, handlePageChange] = useState('');
+
+
 
 
     const renderPage = () => {
 
-
         switch (currentPage) {
-
 
             case 'About Me' :
                 return  <About />;
@@ -38,14 +37,13 @@ function App() {
 
         return (
 
-        <Fragment>
-            <Navigation />
+        <Fragment >
             <body>
+            <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
             <h1 className={`mainHeader text-dark ff-serif-bold fs-800`}>Bee Better Massage </h1>
             <div className='hero'>
             </div>
             <Honeycomb currentPage={currentPage} handlePageChange={handlePageChange}/>
-
             {renderPage(currentPage)}
 
             <FooterContact/>

@@ -3,11 +3,11 @@
 	justify-content: center;
 }
 .primaryHeader {
-	margin-top: 1em;
+	/*margin-top: 1em;*/
+	/*border-top: .2em solid hsl(var(--clr-dark),.2);*/
 	align-items: center;
 	justify-content: space-between;
 	background-color: hsl(var(--clr-brown), .2);
-	border-top: .2em solid hsl(var(--clr-dark),.2);
 	border-bottom: .2em solid hsl(var(--clr-dark),.2);
 	max-height: 100px;
 }
@@ -30,6 +30,10 @@
 }
 .logo{
 	max-height:90px;
+
+}
+.logo:hover{
+	cursor: pointer;
 }
 
 

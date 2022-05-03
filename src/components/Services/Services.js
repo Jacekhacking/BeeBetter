@@ -5,7 +5,7 @@ const Services = () => {
 
     return (
         <Fragment>
-            <div>
+            <div id = "Services">
                 <h2 className={`${styles["services-header"]} text-dark ff-serif-bold fs-700`}>Services</h2>
 
                 <h3 className={`${styles["services-subheader"]} fs-600 ff-serif-bold`}

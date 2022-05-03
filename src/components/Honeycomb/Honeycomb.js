@@ -7,50 +7,55 @@ import hexMySpace from "../UI/assets/hexMySpace.jpg";
 import hexDailyExercise from "../UI/assets/hexDailyExercises.jpg";
 import hexSocials from "../UI/assets/hexSocials.jpg";
 import styles from './Honeycomb.module.css'
-import $ from 'jquery';
+
 
 const Honeycomb = (props) => {
 
-const testingFunction = () => {
-    props.handlePageChange('About Me')
-    console.log('test worked')
-}
     return (
+
+
         <div className={`${styles["honeycomb-container"]}`}>
             <ul className={`${styles["honeycomb"]}`}>
-                <li className={`${styles["honeycomb-cell"]}`}>
+
+                <a href="#AboutMe" onClick={() => {props.handlePageChange('About Me')}} className={`${styles["honeycomb-cell"]}`}>
                     <img className={`${styles["honeycomb-cell-img"]}`} src={hexAboutMePic} alt="sunflower pic"/>
-                    <div onClick={() => {props.handlePageChange('About Me')}  } className={`${styles["honeycomb-cell-title"]}`}>About-Me</div>
-                </li>
-                <li className={`${styles["honeycomb-cell"]}`}>
-                    <img className={`${styles["honeycomb-cell-img"]}`} src={hexSchedulePic} alt="sunflower pic"/>
-                    <div onClick={ () => props.handlePageChange('Services')} className={`${styles["honeycomb-cell-title"]}`}>Services</div>
-                </li>
-                <li className={`${styles["honeycomb-cell"]}`}>
+                    <div className={`${styles["honeycomb-cell-title"]}`}>About-Me</div>
+                </a>
+
+
+
+                <a href="#Services" onClick={ () => props.handlePageChange('Services')}  className={`${styles["honeycomb-cell"]}`}> <img className={`${styles["honeycomb-cell-img"]}`} src={hexSchedulePic} alt="sunflower pic"/>
+                    <div className={`${styles["honeycomb-cell-title"]}`}>Services</div> </a>
+
+
+                <a href="#Unfinished" onClick={()=> {props.handlePageChange('Unfinished')}}  className={`${styles["honeycomb-cell"]}`}>
                     <img className={`${styles["honeycomb-cell-img"]}`} src={hexContactPic} alt="sunflower pic"/>
-                    <div onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell-title"]}`}>Contact me</div>
-                </li>
-                <li className={`${styles["honeycomb-cell"]}`}>
+                    <div className={`${styles["honeycomb-cell-title"]}`}>Contact me</div>
+                </a>
+
+               <a href='#Unfinished' onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell"]}`}>
                     <img className={`${styles["honeycomb-cell-img"]}`} src={hexFaqPic} alt="sunflower pic"/>
-                    <div onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell-title"]}`}>FAQ<small>test</small></div>
-                </li>
-                <li className={`${styles["honeycomb-cell"]}`}>
+                    <div  className={`${styles["honeycomb-cell-title"]}`}>FAQ<small>test</small></div>
+                </a>
+
+                <a href="Unfinished" onClick={()=> {props.handlePageChange('Unfinished')}}  className={`${styles["honeycomb-cell"]}`}>
                     <img className={`${styles["honeycomb-cell-img"]}`} src={hexMySpace} alt="sunflower pic"/>
-                    <div onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell-title"]}`}>My Space<small></small></div>
-                </li>
-                <li className={`${styles["honeycomb-cell"]}`}>
+                    <div className={`${styles["honeycomb-cell-title"]}`}>My Space<small></small></div>
+                </a>
+                <a href="Unfinished" onClick={()=> {props.handlePageChange('Unfinished')}}  className={`${styles["honeycomb-cell"]}`}>
                     <img className={`${styles["honeycomb-cell-img"]}`} src={hexDailyExercise} alt="sunflower pic"/>
-                    <div onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell-title"]}`}>Daily<small>Exercises</small></div>
-                </li>
-                <li className={`${styles["honeycomb-cell"]}`}>
+                    <div className={`${styles["honeycomb-cell-title"]}`}>Daily<small>Exercises</small></div>
+                </a>
+                <a href="Unfinished" onClick={()=> {props.handlePageChange('Unfinished')}}  className={`${styles["honeycomb-cell"]}`}>
                     <img className={`${styles["honeycomb-cell-img"]}`} src={hexSocials} alt="sunflower pic"/>
-                    <div onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell-title"]}`}>Blog</div>
-                </li>
+                    <div className={`${styles["honeycomb-cell-title"]}`}>Blog</div>
+                </a>
 
                 <li className={`${styles["honeycomb-cell"]}  ${styles["honeycomb-hidden"]}`}>
                 </li>
             </ul>
         </div>
+
     )
 }
 
