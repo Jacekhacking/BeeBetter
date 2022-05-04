@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
 import Contact from "./components/Contact/Contact.js";
+import ResponsiveContentBookingButton from "./components/UI/Buttons/ResponsiveContentBookingButton";
 
 
 function App() {
@@ -36,19 +37,18 @@ function App() {
     }
 
 
-
-
-
         return (
 
         <Fragment >
             <body>
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
-            <h1 className={`mainHeader text-dark ff-serif-bold fs-800`}>Bee Better Massage </h1>
+            <h1 className={`mainHeader text-dark ff-serif-bold `}>Bee Better Massage </h1>
             <div className='hero'>
             </div>
-            <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange}/>
+            <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange} />
+
             {renderPage(currentPage)}
+            <ResponsiveContentBookingButton/>
 
             {currentPage==='Contact' && <Contact/>}
             {currentPage!=='Contact' && <FooterContact currentPage ={currentPage}/>}

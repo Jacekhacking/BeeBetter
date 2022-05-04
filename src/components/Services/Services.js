@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import styles from "./Services.module.css"
-import BookingButton from "../UI/Button/BookingButton.js";
+import BookingButton from "../UI/Buttons/BookingButton.js";
 
 const Services = () => {
 

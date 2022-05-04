@@ -125,16 +125,17 @@
     margin: 0 12.5px;
 }
 
-.hex-link > a:link{
-   color: pink;
-}
 /****** Responsive *******/
 
 @media (max-width: 550px)
 {
-    .honeycomb-cell
+    .honeycomb,
+    .honeycomb-cell,
+    .honeycomb-cell-img,
+    .honeycomb-cell-title,
+    .honeycomb-container
     {
-        margin: 81.25px 25px;
+        display: none;
     }
 }
 

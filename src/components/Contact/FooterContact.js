@@ -36,7 +36,7 @@ hiddenOrNot(test)
                 </div>
 
                 <div className={`fs-300`}>
-                    Phone: 385-313-0591
+                    Phone: 385-313-0591 <span className={'fs-200'} style={{color: 'hsl(var(--clr-dark),.8)'}}>(Text preferred)</span>
                 </div>
                 <div className={`fs-300`}>
                     <a href="https://www.instagram.com/bee.better.massage">Instagram </a>

@@ -16,7 +16,7 @@
     --fs-900: 9.375rem;
     --fs-800: 5.25rem;
     --fs-700: 3.5rem;
-    --fs-600: 2rem;
+    --fs-600: 2.25rem;
     --fs-500: 1.75rem;
     --fs-400: 1.425rem;
     --fs-300: 1rem;
@@ -81,6 +81,10 @@ body {
     font-family: var(--ff-serif-condensed);
 
 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /*make images easier to work with*/
@@ -255,8 +259,22 @@ ul {
 .mainHeader{
     text-align: center;
     padding: .5em;
+    font-size:  var(--fs-800);
 }
 
+
+
+@media(max-width: 846px){
+    .mainHeader{
+        font-size: var(--fs-700);
+    }
+}
+
+@media(max-width: 580px) {
+    .mainHeader{
+        font-size: var(--fs-600);
+    }
+}
 
 
 /*   HIDE COMPONENT    */
@@ -279,7 +297,7 @@ ul {
 
 
 /* hero media */
-@media (min-width: 640px) {
+@media (min-width: 550px) {
     .hero{
         background-size: cover;
     }

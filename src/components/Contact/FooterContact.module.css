@@ -5,5 +5,11 @@
     border-top: .1rem solid hsl(var(--clr-yellow));
     padding-bottom: 1em;
     padding-top: 2em;
+}
 
+@media(max-width: 550px) {
+    .footer{
+        margin-left:.5em;
+        margin-right:0;
+    }
 }

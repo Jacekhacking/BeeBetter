@@ -3,8 +3,6 @@
 	justify-content: center;
 }
 .primaryHeader {
-	/*margin-top: 1em;*/
-	/*border-top: .2em solid hsl(var(--clr-dark),.2);*/
 	align-items: center;
 	justify-content: space-between;
 	background-color: hsl(var(--clr-brown), .2);
@@ -54,3 +52,44 @@
 	background-color: hsl(var(--clr-yellow),.7);
 }
 
+.hamburger-tab{
+	max-height: 30px;
+	display:none;
+	position: absolute;
+	right:50px;
+}
+
+.hamburger-tab:hover{
+	cursor: pointer;
+}
+
+.bookingLink{
+	border: 2px solid hsl(var(--clr-dark),.4);
+	margin: 2em;
+	border-bottom: 2px solid hsl(var(--clr-dark), .4);
+	background-color: hsl(var(--clr-brown),.3);
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: clamp(var(--fs-100), (var(--fs-500)), var(--fs-500));
+
+
+
+}
+.bookingLink:hover{
+	border: 2px solid hsl(var(--clr-dark),.4);
+	background-color: hsl(var(--clr-yellow),.7);
+}
+@media (max-width: 550px) {
+	.bookingLink{
+		display:none;
+	}
+	.hamburger-tab{
+		display: block;
+	}
+}
+
+@media(max-width: 550px){
+	.hamburger-tab{
+
+	}
+}
