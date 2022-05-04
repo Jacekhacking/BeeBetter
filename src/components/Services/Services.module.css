@@ -2,17 +2,26 @@
     text-align: center;
     background-color: hsl(var(--clr-yellow), .5);
     border: 2px solid hsl(var(--clr-brown));
-
 }
 
 
 .services-subheader{
     padding: 0;
     margin-top: 2em;
+    font-size: var(--fs-600);
+    font-family:  var(--ff-serif-bold)
 
 
 }
 
-.services-description {
+.services-description{
+    font-size: var(--fs-400);
     margin: 3em;
+    text-align: center;
+
+}
+.services-prices{
+    font-size: var(--fs-400);
+    text-align: center;
+    color: hsl(var(--clr-dark),.7);
 }

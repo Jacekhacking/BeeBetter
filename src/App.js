@@ -1,16 +1,17 @@
 import React, {Fragment, useState} from 'react';
 import './App.css';
 import About from './components/About/About';
-import FooterContact from "./components/Footer/FooterContact";
+import FooterContact from "./components/Contact/FooterContact";
 import Honeycomb from "./components/Honeycomb/Honeycomb";
 import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
+import Contact from "./components/Contact/Contact.js";
+
+
 function App() {
 
     const [currentPage, handlePageChange] = useState('');
-
-
 
 
     const renderPage = () => {
@@ -23,6 +24,9 @@ function App() {
             case 'Services' :
                 return <Services />
 
+            case 'Contact' :
+                return ''
+
             case 'Unfinished' :
                 return <Unfinished/>
 
@@ -31,9 +35,9 @@ function App() {
         }
     }
 
-    if (currentPage === 'About Me' ){
-        console.log('about me if statement working')
-    }
+
+
+
 
         return (
 
@@ -43,10 +47,11 @@ function App() {
             <h1 className={`mainHeader text-dark ff-serif-bold fs-800`}>Bee Better Massage </h1>
             <div className='hero'>
             </div>
-            <Honeycomb currentPage={currentPage} handlePageChange={handlePageChange}/>
+            <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange}/>
             {renderPage(currentPage)}
 
-            <FooterContact/>
+            {currentPage==='Contact' && <Contact/>}
+            {currentPage!=='Contact' && <FooterContact currentPage ={currentPage}/>}
 
             </body>
         </Fragment>

@@ -259,6 +259,15 @@ ul {
 
 
 
+/*   HIDE COMPONENT    */
+
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
+
 
 
 

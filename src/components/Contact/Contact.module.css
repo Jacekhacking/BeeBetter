@@ -1,0 +1,14 @@
+.contact-container{
+    text-align: center;
+    min-height: 40vh;
+}
+.contact-container-item{
+    font-size: var(--fs-500);
+    padding: 1.7rem;
+}
+
+.contact-header{
+    text-align: center;
+    background-color: hsl(var(--clr-yellow), .5);
+    border: 2px solid hsl(var(--clr-brown));
+}
