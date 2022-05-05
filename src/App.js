@@ -7,8 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
 import Contact from "./components/Contact/Contact.js";
-import ResponsiveContentBookingButton from "./components/UI/Buttons/ResponsiveContentBookingButton";
-import HoneycombTest from "./components/Honeycomb/HoneycombTest";
+
 
 
 function App() {
@@ -47,7 +46,6 @@ function App() {
             <div className='hero'>
             </div>
             <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange} />
-            {/*<HoneycombTest currentPage={currentPage} handlePageChange={handlePageChange}/>*/}
 
             {renderPage(currentPage)}
 
