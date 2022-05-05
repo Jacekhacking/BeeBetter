@@ -248,22 +248,26 @@ ul {
 .hero{
     background-image: url("./components/UI/assets/flowersOnBack.jpg");
     background-repeat: no-repeat;
-    min-height: 35vh;
-    background-size: contain;
+
+    background-size: cover;
     background-position: center;
-    width: 100%
+
+    height: auto;
+    min-height: 30vh;
+    margin-left:1rem ;
+    margin-right:1rem ;
 }
 
 
 
 .mainHeader{
     text-align: center;
-    padding: .5em;
+    padding:0;
     font-size:  var(--fs-800);
 }
 
 
-
+/*main header media queries*/
 @media(max-width: 846px){
     .mainHeader{
         font-size: var(--fs-700);
@@ -276,6 +280,13 @@ ul {
     }
 }
 
+/*  hero media queries*/
+
+@media(min-width: 1200px){
+    .hero{
+        min-height: 40vh;
+    }
+}
 
 /*   HIDE COMPONENT    */
 
@@ -297,9 +308,9 @@ ul {
 
 
 /* hero media */
-@media (min-width: 550px) {
+@media (max-width: 550px) {
     .hero{
-        background-size: cover;
+        min-height: 25vh ;
     }
 
 }
