@@ -125,7 +125,7 @@
     margin: 0 12.5px;
 }
 
-/****** Responsive *******/
+/****** Media Queries *******/
 @media(max-width: 340px){
 .honeycomb-container{
     padding-bottom:6em;
