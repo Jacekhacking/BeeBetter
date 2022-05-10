@@ -4,7 +4,6 @@ import './Navigation.module.css'
 import styles from "./Navigation.module.css"
 import Logo from "../UI/assets/Logo.png"
 // import BookingButton from "../UI/Buttons/BookingButton.js";
-import Hamburger from "../UI/assets/Hamburger.png"
 const Navigation = (props) => {
 
 
