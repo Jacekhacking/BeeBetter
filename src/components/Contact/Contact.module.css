@@ -12,3 +12,20 @@
     background-color: hsl(var(--clr-yellow), .5);
     border: 2px solid hsl(var(--clr-brown));
 }
+
+
+
+
+@media(max-width: 500px) {
+.contact-container-item{
+    font-size: var(--fs-400);
+    padding:0;
+}
+}
+
+@media(max-width: 350px){
+    .contact-container-item{
+        font-size: var(--fs-200);
+        padding: 0;
+    }
+}
