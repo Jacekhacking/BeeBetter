@@ -5,7 +5,7 @@ const Contact = () => {
     return(
         <div id = "Contact" className={`${styles['contact-container']}`}>
             <h2 className={styles['contact-header']}>Contact Me here!</h2>
-            <div className={`${ styles['contact-container-item'] }`}>
+            <div className={`${ styles['contact-container-item']} `}>
                 Email: <a href="mailto:alora@beebettermassage.com">alora@beebettermassage.com</a>
             </div>
 

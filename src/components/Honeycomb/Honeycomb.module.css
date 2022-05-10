@@ -59,6 +59,7 @@
     font-weight: 700;
     font-size: 1.5em;
     transition: opacity 350ms;
+    letter-spacing: 1.35px;
 }
 .honeycomb-cell-title > small
 {
@@ -152,7 +153,7 @@
         padding-bottom: 5em;
     }
     .honeycomb-cell-title{
-        font-size: .5em;
+        font-size: .6em;
     }
     .honeycomb-hidden{
         width: 100px;
