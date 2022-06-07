@@ -11,6 +11,7 @@
     --clr-blue: 203, 32%, 64%;
     --clr-dark: 100, 3%, 21%;
     --clr-light: 45, 40%, 97%;
+    --clr-black: 193, 0%, 11%;
 
     /*font-sizes*/
     --fs-900: 9.375rem;
@@ -200,11 +201,13 @@ ul {
 .bg-blue{background-color: hsl(var(--clr-blue))}
 .bg-brown{background-color: hsl(var(--clr-brown))}
 .bg-yellow{background-color: hsl(var(--clr-yellow))}
+.bg-black{background-color: hsl(var(--clr-dark-brown))}
 
 .text-dark{color: hsl(var(--clr-dark))}
 .text-light{color: hsl(var(--clr-light))}
 .text-blue{color: hsl(var(--clr-blue))}
 .text-brown{color: hsl(var(--clr-brown))}
+.text-black{color: hsl(var(--clr-dark-brown))}
 .text-yellow{color: hsl(var(--clr-yellow))}
 
 /* typography*/

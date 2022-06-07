@@ -1,10 +1,26 @@
+.social-logo{
+    width: 40px;
+}
 
-.footer{
-    margin-left: 3em;
-    margin-right: 3em;
-    border-top: .1rem solid hsl(var(--clr-yellow));
-    padding-bottom: 1em;
-    padding-top: 2em;
+.footer-top{
+
+    border-top: .2rem solid hsl(var(--clr-black), .2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(var(--clr-black),.9);
+    padding: .2em 1vw;
+}.footer-bottom{
+
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: .2em 1vw;
+}
+.footer>a{
+    color:inherit;
 }
 
 @media(max-width: 550px) {

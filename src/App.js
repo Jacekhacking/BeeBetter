@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
 import Contact from "./components/Contact/Contact.js";
+import Tour from "./components/Tour/Tour"
 
 
 
@@ -48,6 +49,8 @@ function App() {
             <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange} />
 
             {renderPage(currentPage)}
+
+            <Tour/>
 
 
             {currentPage==='Contact' && <Contact/>}
