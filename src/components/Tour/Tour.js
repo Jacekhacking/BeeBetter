@@ -11,7 +11,10 @@ const Tour = () => {
     return (
         <Fragment>
 
-            <h2 id={`Tour`} className={`${styles['tour-header']} text-dark ff-serif-bold fs-700`} >Tour My Space </h2>
+            <h2
+                id={`Tour`}
+                className={`${styles['tour-header']} text-dark ff-serif-bold fs-700`}
+            >Tour My Space </h2>
 
             <TourCarousel/>
 
