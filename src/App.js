@@ -7,7 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
 import Contact from "./components/Contact/Contact.js";
-import Tour from "./components/Tour/Tour"
+import Tour from "./components/Tour/Tour";
 
 
 
@@ -32,6 +32,9 @@ function App() {
             case 'Unfinished' :
                 return <Unfinished/>
 
+            case 'Tour' :
+                return <Tour />
+
             default:
                 return ''
         }
@@ -50,7 +53,6 @@ function App() {
 
             {renderPage(currentPage)}
 
-            <Tour/>
 
 
             {currentPage==='Contact' && <Contact/>}
