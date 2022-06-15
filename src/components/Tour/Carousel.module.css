@@ -1,5 +1,5 @@
 .carousel-img{
-    width: 70%;
+    width: 40%;
     height:auto;
     object-fit: cover;
     border: 3px solid hsl(var(--clr-brown))

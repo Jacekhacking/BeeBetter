@@ -7,7 +7,7 @@ function FooterContact() {
 
     return (
         <Fragment>
-            <div className={`${styles['footer']} flex wrap fs-300 text-dark`}>
+            <div className={`${styles['footer']} flex wrap text-dark`}>
 
                     <a href="mailto:alora@beebettermassage.com">alora@beebettermassage.com</a>
                     <p> 385-313-0591 <span className={'fs-100'} style={{color: 'hsl(var(--clr-dark),.7)'}}>(Text)</span></p>

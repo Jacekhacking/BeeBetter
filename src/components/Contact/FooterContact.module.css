@@ -11,14 +11,22 @@
     align-items: center;
     background-color: hsl(var(--clr-brown),.4);
     padding: .2em 1vw;
+    font-size: var(--fs-300);
 }
 .footer>a{
     color:inherit;
 }
+@media(max-width: 300px){
+    .footer{
+        font-size: var(--fs-200);
+    }
+}
+
 
 @media(max-width: 550px) {
     .footer{
-        margin-left:.5em;
+        margin-left:0;
         margin-right:0;
     }
 }
+

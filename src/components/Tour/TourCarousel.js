@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material';
+import { Paper } from '@mui/material';
 import styles from "./Carousel.module.css"
 import tour_pic_1 from "../UI/assets/tour pictures/4C003FCB-9DA5-4F2C-8CFC-CD0F5338F04C.JPG"
 import tour_pic_2 from "../UI/assets/tour pictures/889F924C-7399-429D-8EF9-06639E0F3714.JPG"
@@ -22,7 +22,6 @@ function TourCarousel()
         {
             image: `${tour_pic_3}`
         },
-
         {
             image: `${tour_pic_4}`
         },
@@ -43,11 +42,14 @@ function TourCarousel()
 function Item(props)
 {
     return (
-        <Paper className={'flex'} style={{justifyContent:'center', }}>
 
-            <img src={props.item.image} className={styles['carousel-img']} alt=""/>
 
-        </Paper>
-    )
+    <Paper  id={"Tour"}  className={'flex'} style={{justifyContent:'center', }}>
+
+        <img src={props.item.image} className={styles['carousel-img']} alt=""/>
+
+    </Paper>
+
+)
 }
 export default TourCarousel;

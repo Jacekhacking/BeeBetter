@@ -9,16 +9,18 @@ import TourCarousel from "./TourCarousel"
 
 const Tour = () => {
     return (
-        <Fragment>
 
-            <h2
-                id={`Tour`}
-                className={`${styles['tour-header']} text-dark ff-serif-bold fs-700`}
-            >Tour My Space </h2>
+<Fragment >
+    <h2
 
-            <TourCarousel/>
+        className={`${styles['tour-header']} text-dark ff-serif-bold fs-700`}
 
-        </Fragment>
+    >Tour My Space </h2>
+
+    <TourCarousel/>
+
+</Fragment>
+
     )
 }
 

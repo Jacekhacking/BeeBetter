@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    min-height: 1000px;
 }
 
 .tour-header{
@@ -12,7 +11,7 @@
     border: 2px solid hsl(var(--clr-brown));
 }
 .tour-img{
-    width: 400px;
+    width: 600px;
     height: auto;
     border: 4px solid hsl(var(--clr-brown));
     margin: 1rem;
