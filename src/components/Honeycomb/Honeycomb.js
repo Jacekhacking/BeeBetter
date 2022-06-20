@@ -41,7 +41,7 @@ const Honeycomb = (props) => {
                     <div className={`${styles["honeycomb-cell-title"]}`}><small>Take a tour</small></div>
                 </a>
 
-                <a href='#Unfinished' onClick={()=> {props.handlePageChange('Unfinished')}} className={`${styles["honeycomb-cell"]}`}>
+                <a href='#Reviews' onClick={()=> {props.handlePageChange('Reviews')}} className={`${styles["honeycomb-cell"]}`}>
                    <img className={`${styles["honeycomb-cell-img"]}`} src={hexFaqPic} alt="sunflower pic"/>
                    <div  className={`${styles["honeycomb-cell-title"]}`}><small>reviews & faq</small></div>
                </a>

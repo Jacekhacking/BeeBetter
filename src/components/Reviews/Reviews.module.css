@@ -1,0 +1,15 @@
+.reviews-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.review-item{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+}
+.review-text{
+    font-size: var(--fs-200)
+}

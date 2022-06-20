@@ -8,7 +8,7 @@ import Services from "./components/Services/Services";
 import Unfinished from "./components/UI/Unfinished/Unfinished";
 import Contact from "./components/Contact/Contact.js";
 import Tour from "./components/Tour/Tour";
-
+import Reviews from "./components/Reviews/Reviews"
 
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
     const renderPage = () => {
 
         switch (currentPage) {
+            case 'Reviews' :
+                return <Reviews />
 
             case 'About Me' :
                 return  <About />;
@@ -36,7 +38,7 @@ function App() {
                 return <Tour />
 
             default:
-                return ''
+                return <Reviews/>
         }
     }
 
