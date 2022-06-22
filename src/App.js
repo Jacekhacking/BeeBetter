@@ -38,7 +38,7 @@ function App() {
                 return <Tour />
 
             default:
-                return <Reviews/>
+                return ''
         }
     }
 

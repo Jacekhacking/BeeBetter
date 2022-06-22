@@ -1,18 +1,22 @@
 import React from "react";
 import styles from "./Reviews.module.css"
+import {reviewsData} from "../UI/Data";
+
 
 const Reviews = () => {
+
+
     return (
         <div id={"Reviews"} className={styles['reviews-container']}>
-            <div className={styles['review-item']}>
-                <h2>Name <span className={'fs-200'}>00/00/0000</span></h2>
-                <p className={styles['review-text']}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem dolor inventore iste iusto
-                    laboriosam magni porro, quaerat saepe ut. Blanditiis esse excepturi illo inventore laudantium,
-                    minima reiciendis sapiente sunt.</p>
-            </div>
-            <div>
-                test
-            </div>
+
+            {reviewsData.map(review => (
+                <div className={styles['review-item']}>
+                    <div>
+                        <h2 className={'fs-400'}>{review.Name} <span className={'fs-200'}>{review.Date}</span></h2>
+                    </div>
+                    <div className={styles['review-text']}>{review.Review}</div>
+                </div>
+            ))}
         </div>
     )
 }

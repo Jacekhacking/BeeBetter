@@ -1,15 +1,22 @@
 .reviews-container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .review-item{
-    width: 300px;
-    height: 300px;
-    background-color: red;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+   max-width: 450px;
+    background-color: hsl(var(--clr-brown), .6);
+    border: 3px solid hsl(var(--clr-brown));
+    padding-top: 10px;
+    margin-top: 10px;
 }
 .review-text{
-    font-size: var(--fs-200)
+    font-size: clamp(var(--fs-100), 2vh, var(--fs-300));
 }
