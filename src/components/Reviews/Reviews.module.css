@@ -1,22 +1,29 @@
 .reviews-container{
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+
 }
 
-.review-item{
+.review-header{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-bottom: 10px;
 
+}
+.review-item{
+
+    flex-direction: inherit;
     align-items: center;
     justify-content: center;
-   max-width: 450px;
-    background-color: hsl(var(--clr-brown), .6);
+    max-width: 550px;
+    background-color: hsl(var(--clr-brown), .3);
     border: 3px solid hsl(var(--clr-brown));
-    padding-top: 10px;
-    margin-top: 10px;
+
+    margin-top: 25px;
 }
 .review-text{
     font-size: clamp(var(--fs-100), 2vh, var(--fs-300));
 }
+
