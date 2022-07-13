@@ -1,14 +1,13 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import styles from "./Services.module.css"
 import BookingButton from "../UI/Buttons/BookingButton.js";
 
 const Services = () => {
 
     return (
-        <Fragment>
+        <>
             <div id="Services">
                 <h2 className={`${styles["services-header"]} text-dark ff-serif-bold fs-700`}>Services & Modalities</h2>
-
 
                 <h3 className={`${styles["services-subheader"]} fs-600 ff-serif-bold`}
                     style={{textAlign: 'center'}}>Sports Style Massage</h3>
@@ -112,7 +111,7 @@ const Services = () => {
                 </p>
                 <BookingButton/>
             </div>
-        </Fragment>
+        </>
     )
 }
 

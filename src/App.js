@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, { useState} from 'react';
 import './App.css';
 import About from './components/About/About';
 import FooterContact from "./components/Contact/FooterContact";
@@ -42,26 +42,24 @@ function App() {
         }
     }
 
-
         return (
+            <>
+                    <body>
+                    <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
+                    <h1 className={`mainHeader text-dark ff-serif-bold `}>Bee Better Massage </h1>
+                    <div className='hero'>
+                    </div>
+                    <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange} />
 
-        <Fragment >
-            <body>
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
-            <h1 className={`mainHeader text-dark ff-serif-bold `}>Bee Better Massage </h1>
-            <div className='hero'>
-            </div>
-            <Honeycomb  currentPage={currentPage} handlePageChange={handlePageChange} />
+                    {renderPage(currentPage)}
 
-            {renderPage(currentPage)}
+                    {currentPage==='Contact' && <Contact/>}
+                    {currentPage!=='Contact' && <FooterContact currentPage ={currentPage}/>}
+                    </body>
 
 
 
-            {currentPage==='Contact' && <Contact/>}
-            {currentPage!=='Contact' && <FooterContact currentPage ={currentPage}/>}
-
-            </body>
-        </Fragment>
+        </>
     )
 }
 export default App;

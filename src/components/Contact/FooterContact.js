@@ -14,7 +14,9 @@ function FooterContact() {
                     <p  >BeeBetter <span className={' fs-100 '} style={{color:'hsl(var(--clr-dark),.7)'}}>| LMT private practice |</span></p>
                     <div className={'flex'} >
                     <p >Socials</p>
-                    <a href="https://www.instagram.com/bee.better.massage"><img className={styles['social-logo']} src={instagram} alt="instagram"/>  </a>
+                    <a
+                       href="https://www.instagram.com/bee.better.massage" target="_blank"
+                       rel="noreferrer" ><img className={styles['social-logo']} src={instagram} alt="instagram"/>  </a>
                 </div>
 
             </div>
