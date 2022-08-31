@@ -12,8 +12,6 @@ import styles from './Honeycomb.module.css'
 const Honeycomb = (props) => {
 
     return (
-
-
         <div className={`${styles["honeycomb-container"]}`}>
             <div className={`${styles["honeycomb"]}`}>
 
