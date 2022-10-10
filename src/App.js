@@ -1,51 +1,49 @@
-import React, { useState} from 'react';
-import './App.css';
-import About from './components/About/About';
-import FooterContact from "./components/Contact/FooterContact";
-import Honeycomb from "./components/Honeycomb/Honeycomb";
-import Navigation from "./components/Navigation/Navigation";
-import Services from "./components/Services/Services";
-import Unfinished from "./components/UI/Unfinished/Unfinished";
+import React from "react";
+import "./App.css";
+// import About from "./components/About/About";
+// import FooterContact from "./components/Contact/FooterContact";
+// import Honeycomb from "./components/Honeycomb/Honeycomb";
+// import Navigation from "./components/Navigation/Navigation";
+// import Services from "./components/Services/Services";
+// import Unfinished from "./components/UI/Unfinished/Unfinished";
 import Contact from "./components/Contact/Contact.js";
-import Tour from "./components/Tour/Tour";
-import Reviews from "./components/Reviews/Reviews"
-
+// import Tour from "./components/Tour/Tour";
+// import Reviews from "./components/Reviews/Reviews";
 
 function App() {
+  //   const [currentPage, handlePageChange] = useState("");
 
-    const [currentPage, handlePageChange] = useState('');
+  //   const renderPage = () => {
+  //     switch (currentPage) {
+  //       case "Reviews":
+  //         return <Reviews />;
 
+  //       case "About Me":
+  //         return <About />;
 
-    const renderPage = () => {
+  //       case "Services":
+  //         return <Services />;
 
-        switch (currentPage) {
-            case 'Reviews' :
-                return <Reviews />
+  //       case "Contact":
+  //         return "";
 
-            case 'About Me' :
-                return  <About />;
+  //       case "Unfinished":
+  //         return <Unfinished />;
 
-            case 'Services' :
-                return <Services />
+  //       case "Tour":
+  //         return <Tour />;
 
-            case 'Contact' :
-                return ''
+  //       default:
+  //         return "";
+  //     }
+  //   };
 
-            case 'Unfinished' :
-                return <Unfinished/>
-
-            case 'Tour' :
-                return <Tour />
-
-            default:
-                return ''
-        }
-    }
-
-        return (
-            <>
-                    <body>
-                    <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
+  return (
+    <>
+      <body>
+        <h1 className="headerCenter">Website Currently Under Remodel </h1>
+        <Contact />
+        {/* <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
                     <h1 className={`mainHeader text-dark ff-serif-bold `}>Bee Better Massage </h1>
                     <div className='hero'>
                     </div>
@@ -54,13 +52,9 @@ function App() {
                     {renderPage(currentPage)}
 
                     {currentPage==='Contact' && <Contact/>}
-                    {currentPage!=='Contact' && <FooterContact currentPage ={currentPage}/>}
-                    </body>
-
-
-
-        </>
-    )
+                    {currentPage!=='Contact' && <FooterContact currentPage ={currentPage}/>} */}
+      </body>
+    </>
+  );
 }
 export default App;
-
